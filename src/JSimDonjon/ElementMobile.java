@@ -22,7 +22,6 @@ abstract class ElementMobile implements AffichageDePlateau.PlateauPiece {
 	protected Image image = null;
 	protected Donjon donjon;
 	protected String espece;
-	protected boolean monstreMort=false;
 
 	public ElementMobile(final Donjon donjon, final char dessin, final String image, final int x,
 			final int y, final int direction, final String espece) {
