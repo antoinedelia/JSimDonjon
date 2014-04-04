@@ -35,8 +35,9 @@ public class Monstre extends ElementMobile {
 						this.direction=OUEST;
 				}
 				if(demiTour)	//S'il doit faire demi-tour, cela lui prendra un tour de plus
+				{
 					demiTour=false;
-
+				}
 				else if(this.direction==NORD){	//S'il se dirige vers le nord
 
 					final ElementMobile nord1 = this.donjon.getElementMobile(this.getX(), this.getY()-1);	//On définit trois éléments mobiles dans le voisinnage du monstre
@@ -76,8 +77,8 @@ public class Monstre extends ElementMobile {
 						}
 						else{
 							this.direction=EST;	//Sinon il tourne à droite
+							tourne++;	//On compte le nombre de fois que le monstre à tourné
 						}
-						tourne++;	//On compte le nombre de fois que le monstre à tourné
 					}
 					else
 						y--;	//On fait avancer le monstre
@@ -121,8 +122,8 @@ public class Monstre extends ElementMobile {
 						}
 						else{
 							this.direction=SUD;
+							tourne++;
 						}
-						tourne++;
 					}
 					else
 						x++;
@@ -167,8 +168,8 @@ public class Monstre extends ElementMobile {
 						}
 						else{
 							this.direction=OUEST;
+							tourne++;
 						}
-						tourne++;
 					}
 					else
 						y++;
@@ -215,8 +216,8 @@ public class Monstre extends ElementMobile {
 						else
 						{
 							this.direction=NORD;
+							tourne++;
 						}
-						tourne++;
 					}
 					else
 						x--;

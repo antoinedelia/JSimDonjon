@@ -4,7 +4,7 @@ import SystemeDeConfiguration.FenetreDeConfiguration;
 
 
 public class J_Sim_Donjon {
-	public static final int DUREE_TOUR = 200;
+	public static final int DUREE_TOUR = 500;
 
 	public static void main(final String[] args) {
 		final ConfigurationJSimDonjon configuration = new ConfigurationJSimDonjon();

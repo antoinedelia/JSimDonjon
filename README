@@ -1,1 +1,27 @@
-Test
+J-Sim Donjon(R) Version 0.81 04/04/2014
+
+README
+
+ J-Sim Donjon est un jeu vidéo de simulation dans lequel plusieurs personnages doivent rester vivants
+ face à un monstre avec un comportement défini.
+
+INSTALLATION
+
+ Pour récupérer ce projet, cliquer sur Fork en haut à droite. Ensuite, vous devez l'importer sur votre
+ ordinateur. Pour cela, démarrez Git et tapez la ligne suivante :
+ git clone https://github.com/yourUsername/JSimDonjon.git
+ Ensuite, vous devez ajouter les lignes suivantes :
+ cd JSimDonjon
+ git remote upstream https://github.com/antoinedelia/JSimDonjon.git
+ git fetch upstream
+
+AUTEURS
+
+ AUFFRET Ewen
+ BAILLARIN Matthieu
+ DELIA Antoine
+
+CONTACT
+
+ Si vous avez des problèmes, des questions des idées ou des suggestions, n'hésitez pas à nous contacter
+ à l'adresse suivante : jsimdonjon@exiajava.fr
