@@ -37,6 +37,7 @@ public class Monstre extends ElementMobile {
 				if(demiTour)	//S'il doit faire demi-tour, cela lui prendra un tour de plus
 				{
 					demiTour=false;
+					tourne=0;
 				}
 				else if(this.direction==NORD){	//S'il se dirige vers le nord
 
@@ -71,7 +72,7 @@ public class Monstre extends ElementMobile {
 						}
 					}
 					else if (!this.donjon.getXY(x, y-1).estVide()){	//S'il y a un obstacle devant le monstre
-						if(tourne%3==0 && tourne!=0){	//Si c'est la troisième fois qu'il tourne
+						if(tourne==3){	//Si c'est la troisième fois qu'il tourne
 							this.direction=SUD;	//Il fait demi-tour
 							demiTour=true;
 						}
@@ -116,7 +117,7 @@ public class Monstre extends ElementMobile {
 						}
 					}
 					else if(!this.donjon.getXY(x+1, y).estVide()){
-						if(tourne%3==0 && tourne!=0){
+						if(tourne==3){
 							this.direction=OUEST;
 							demiTour=true;
 						}
@@ -162,7 +163,7 @@ public class Monstre extends ElementMobile {
 						}
 					}
 					else if(!this.donjon.getXY(x, y+1).estVide()){
-						if(tourne%3==0 && tourne!=0){
+						if(tourne==3){
 							this.direction=NORD;
 							demiTour=true;
 						}
@@ -209,7 +210,7 @@ public class Monstre extends ElementMobile {
 
 					}
 					else if(!this.donjon.getXY(x-1, y).estVide()){
-						if(tourne%3==0 && tourne!=0){
+						if(tourne==3){
 							this.direction=EST;
 							demiTour=true;
 						}
